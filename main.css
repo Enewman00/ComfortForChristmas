@@ -1,11 +1,15 @@
-body
+html, body
 {
-    background-color: white;
+    
+    color: white;
+    margin: 0;
+    height:100%;
 }
 
 h1
 {
-    font-size: 30px;
+    font-size: 8vw;
+    
 }
 
 h3
@@ -16,6 +20,38 @@ h3
 .header
 {
     text-align: center;
-    font-family: 'Hind Siliguri', sans-serif;;
+    font-family: 'Hind Siliguri', sans-serif;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.inline-header
+{
+
+    display: block;
+    font-size: 8vw;
+
+}
+
+#inline-for
+{
+    font-size: 4vw;
+}
+
+.main
+{
+    margin: 3%;
+    background: rgba(0,0,0, 0.66);
+
+}
+
+#snowVideo
+{
+    position:fixed;
+    z-index: -1;
+}
