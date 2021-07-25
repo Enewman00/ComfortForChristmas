@@ -132,6 +132,11 @@ h2
     font-size: 20px;
 }
 
+#who
+{
+    padding-left: 15%;
+    padding-right: 15%;
+}
 
 .little-bar-center {
     height: 3px;
@@ -146,7 +151,7 @@ h2
 
 #green
 {
-    background: #034C3C;
+    background: #00973f;
 }
 
 
@@ -206,7 +211,6 @@ h2
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 
 
