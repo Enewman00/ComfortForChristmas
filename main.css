@@ -340,4 +340,9 @@ table td:first-child, th:first-child {
     {
         height: 350px;
     }
+    #saying-photo
+    {
+        height: auto;
+        width: 90%;
+    }
 }
