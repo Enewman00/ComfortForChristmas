@@ -29,11 +29,12 @@ h2
     font-size: 50px;
     color:rgb(5, 34, 11);
 }
-.header
+.title
 {
+    z-index: 1;
     text-align: center;
     font-family: 'Hind Siliguri', sans-serif;
-    left: 0; top: 0;
+    left: 0; top: 0px;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -52,7 +53,7 @@ h2
     height: 60vh;
 }
 
-.inline-header
+.inline-title
 {
 
     display: block;
@@ -346,3 +347,40 @@ table td:first-child, th:first-child {
         width: 90%;
     }
 }
+
+
+
+
+
+
+
+.topnav {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eeeeee00;
+    position: absolute;
+    text-align: center;
+    z-index: 8 !important;
+  }
+.topnav-inner {
+    display: inline-block;
+}
+  
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .topnav a.active {
+    text-decoration: underline;
+    color: white;
+  }
