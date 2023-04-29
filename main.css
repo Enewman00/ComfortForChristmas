@@ -362,25 +362,46 @@ table td:first-child, th:first-child {
     position: absolute;
     text-align: center;
     z-index: 8 !important;
-  }
+}
 .topnav-inner {
     display: inline-block;
 }
   
-  .topnav a {
+.topnav a {
     float: left;
     color: #ffffff;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     text-decoration: underline;
     color: white;
-  }
-  
-  .topnav a.active {
+}
+
+.topnav a.active {
     text-decoration: underline;
     color: white;
-  }
+}
+@media screen and (max-width: 820px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav-inner.responsive a {
+        float: none;
+        display: inline-block;
+        text-align: left;
+    }
+}

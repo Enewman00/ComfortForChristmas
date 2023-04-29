@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Hind+Siliguri:wght@300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="splide-2.4.21/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="splide-2.4.21/dist/css/themes/splide-sea-green.min.css">
     <title>
@@ -29,7 +30,7 @@
 
 <body>
     <div class="topnav">
-        <div class="topnav-inner">
+        <div class="topnav-inner" id="myTopnav">
 
             <a href="#whoarewe">Who are we?</a>
             <a href="#whatcanido">What can I do?</a>
@@ -37,6 +38,9 @@
             <a href="#donate">Donate</a>
             <a href="#resources">Resources</a>
             <a href="#contact">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="topnavResponse()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 
@@ -218,7 +222,7 @@
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdd2TQLwKwg1EexAqYNa3eII6WKHa1d9GBob0H_Cw1Z6eqzBw/viewform?usp=sf_link" target="_blank">
                                 <h4 class="card-title">Store Blankets</h4>
                             </a>
-                            <p>Do you have an extra closet? An attic? Anywhere NOT dank and smelly. We only provide brand new, nice smelling blankets to seniors. They must not be stored in garage or outside.</p>
+                            <p>Do you have space to help us store blankets? Please email comfortforchristmas @yahoo.com to help</p>
                         </div>
                     </div>
 
@@ -305,6 +309,15 @@
             
         </div>
     </div>
-
+    <script>
+        function topnavResponse() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav-inner") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav-inner";
+          }
+        }
+    </script>
 </body>
 </html>
